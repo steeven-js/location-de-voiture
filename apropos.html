@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/apropos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>SCA | A propos de nous</title>
+    </head>
+    <body>
+        <header id="header_mobile">
+            <!-- navbar-mobile -->
+            <nav id="navbar-mobile">
+                <a href="index.html" class="current">Acceuil</a>
+                <a href="categories.html">Catégories</a>
+                <a href="apropos.html">Entreprise</a>
+                <a href="inscription.html">Résevation</a>
+            </nav>
+        </header>
+
+        <header id="header_desktop">
+            <div class="navbar">
+                    <img src="/Images/logo.jpg" alt="" height="100%">
+                    <h1 class="logo"><span>S</span>C<span>A</span>
+                    </h1>
+                    <div class="navbar_liens_desktop">
+                        <a href="/index.html">Accueil</a>
+                        <div class="dropdown1">
+                            <button class="dropbtn">
+                                <a href="/categories.html">Catégories</a>
+                            </button>
+                            <div class="dropdown1-content">
+                                <a href="/1.Citadine/Descriptif1.html">
+                                    <img src="">Citadine
+                                </a>
+                                <a href="">
+                                    <img src="">Familliale
+                                </a>
+                                <a href="">
+                                    <img src="">Sportive
+                                </a>
+                                <a href="">
+                                    <img src="">Cabriolet
+                                </a>
+                                <a href="">
+                                    <img src="">Suv
+                                </a>
+                                <a href="">
+                                    <img src="">Crossover
+                                </a>
+                                <a href="">
+                                    <img src="">Utilitaire
+                                </a>
+                            </div>
+                        </div> 
+                        <a href="/apropos.html" class="current">Entreprise</a>
+                        <a href="inscription.html">Résevation</a>
+                    </div>
+
+                    <div class="toggle">
+                        <i class="fa-bars fa open"></i>
+                        <i class="fa fa-times close"></i>
+                    </div>  
+            </div>
+        </header>
+
+     
+        <section id="entreprise">
+            <div class="img_about">
+                <h3>A propos de nous</h3>
+            </div> 
+            <article class="about_content">
+                <div class="contenaire">
+                    <div class="about_content_left">
+                        <h1>Luxury and Sports Car Rental</h1>
+                        <p>Rent luxury cars for hours, for filming, advertising, rent a luxury car for your wedding or celebration.</p>
+                    </div>
+                    <div class="about_content_right">
+                        <p>We are the leading company in Spain in the field of experiences with supercars and luxury vehicles and we have a team of more than 250 professionals.</p>
+
+                        <p>Our cars can be picked up and delivered to various parts of the peninsula, thus making your experience easier. You can pick them up at our offices or choose the place yourself, for example, at your hotel. At <span>S</span>C<span>A</span> we are experts in offering luxury car rentals with more vehicles to choose from.</p>
+
+                        <p>We have an important and extensive fleet and catalog of models, to offer you the best option for your experience. We work with the world’s most reputable brands in sports and luxury cars. Renting a luxury car in Europe has never been so easy with <span>S</span>C<span>A</span>.</p>
+
+                        <p>Only with us <span>S</span>C<span>A</span> you will find the latest updated models, the car of your dreams. With <span>S</span>C<span>A</span> you can order a car rental in any city in Europe, comfortably and with the most elegant rates.</p>
+                    </div>
+
+                    <div class="clr"></div>
+                </div>
+            </article>
+
+            <article class="about_service">
+                <div class="contenaire">
+                    <div class="about_service_info">
+                        <div class="shooting">
+                            <div class="devant">
+                                <h3>Shooting</h3>
+                            </div>
+                            <div class="derriere none">
+                                <h3>Shooting</h3>
+                                <p>Rent luxury cars for Advertising and Filming</p>
+                            </div>
+                        </div>
+                        <div class="VIP">
+                            <div class="devant">
+                                <h3>VIP</h3>
+                            </div>
+                            <div class="derriere">
+                                <h3>Shooting</h3>
+                                <p>Rent luxury cars for Advertising and Filming</p>
+                            </div>
+                        </div>
+                        <div class="Events">
+                            <div class="devant">
+                                <h3>Events</h3>
+                            </div>
+                            <div class="derriere">
+                                <h3>Shooting</h3>
+                                <p>Rent luxury cars for Advertising and Filming</p>
+                            </div>
+                        </div>
+                        <div class="Latest_models">
+                            <div class="devant">
+                                <h3>Latest<br>models</h3>
+                            </div>
+                            <div class="derriere">
+                                <h3>Shooting</h3>
+                                <p>Rent luxury cars for Advertising and Filming</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <footer id="main_footer">
+            <p><span>S</span>C<span>A</span> &copy; 2022, All Right Reserved</p>
+        </footer>
+        
+        <script>
+            let toggle = document.querySelector('.toggle')
+            let body = document.querySelector('body')
+
+            toggle.addEventListener('click',function(){
+                body.classList.toggle('opening')
+            }) 
+        </script>
+    </body>
+</html>
