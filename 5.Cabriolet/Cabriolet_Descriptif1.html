@@ -5,132 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./5.Cabriolet/Cabriolet_Descriptif1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles.css/descriptifs.css">
+    <link rel="stylesheet" href="../styles.css/index.css">
     <title>SCA | Cabriolet</title>
 </head>
 
 <body>
-    <header id="header_mobile">
-        <!-- navbar-mobile -->
-        <nav id="navbar-mobile">
-            <a href="./index.html" class="current">Acceuil</a>
-            <a href="./categories.html">Catégories</a>
-            <a href="./apropos.html">Entreprise</a>
-            <a href="./inscription.html">Avis</a>
-        </nav>
-    </header>
-    <header id="header_desktop">
-        <div class="navbar">
-            <img src="./Images/logo.jpg" alt="" height="100%">
-            <h1 class="logo"><span>S</span>C<span>A</span></h1>
-            <div class="navbar_liens_desktop">
-                <a href="./index.html">Accueil</a>
-                <div class="dropdown1">
-                    <button class="dropbtn">
-                        <a href="./categories.html" class="current">Catégories</a>
-                    </button>
-                    <div class="dropdown1-content">
-                        <a href="./1.Citadine/Citadine_Descriptif1.html">Citadine</a>
-                        <a href="./2.Familliale/Familliale_Descriptif1.html">Familliale</a>
-                        <a href="./3.Sportive/Sportive_Descriptif1.html">Sportive</a>
-                        <a href="./4.Luxe/Luxe_Descriptif1.html">Luxe</a>
-                        <a href="./5.Cabriolet/Cabriolet_Descriptif1.html">Cabriolet</a>
-                        <a href="./6.SUV/SUV_Descriptif1.html">SUV</a>
-                        <a href="./7.Crossover/Crossover_Descriptif1.html">Crossover</a>
-                        <a href="./8.Utilitaire/Utilitaire_Descriptif1.html">Utilitaire</a>
-                    </div>
-                </div>
-                <a href="./apropos.html">Entreprise</a>
-                <a href="./inscription.html">Résevation</a>
-            </div>
-
-            <div class="toggle">
-                <i class="fa-bars fa open"></i>
-                <i class="fa fa-times close"></i>
-            </div>
+    <!-- #region navbar-->
+    <header>
+        <div class="logo">
+            <img src="../Images/logo.jpg" height="100%">
         </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="../categories.html">Garage</a></li>
+                <li class="sub-menu ctg-menu"><a href="#" class="active">Catégories</a>
+                    <ul>
+                        <li><a href="../1.Citadine/Citadine_Descriptif1.html">Citadine</a></li>
+                        <li><a href="../2.Familliale/Familliale_Descriptif1.html">Familliale</a></li>
+                        <li><a href="../3.Sportive/Sportive_Descriptif1.html">Sportive</a></li>
+                        <li><a href="../4.Luxe/Luxe_Descriptif1.html">Luxe</a></li>
+                        <li><a href="../5.Cabriolet/Cabriolet_Descriptif1.html">Cabriolet</a></li>
+                        <li><a href="../6.SUV/SUV_Descriptif1.html">SUV</a></li>
+                        <li><a href="../7.Crossover/Crossover_Descriptif1.html">Crossover</a></li>
+                        <li><a href="../8.Utilitaire/Utilitaire_Descriptif1.html">Utilitaire</a></li>
+                    </ul>
+                </li>
+                <li><a href="../entreprise.html">Entreprise</a></li>
+                <li><a href="../inscription.html">Résevation</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+            </div>
     </header>
+    <!-- #endregion navbar-->
 
+    <!-- #region cabriolet-->
+    <section id="cabriolets">
+        <div class="filtre">
+            <div class="container_descriptif">
+                <div class="titre_categorie">
+                    <h1>CABRIOLETS</h1>
+                </div>
+                <div class="back">
+                    <a href="../categories.html"><i class="fa-solid fa-rotate-left"></i> Garage</a>
+                </div>
+                <div class="citadine-content-1">
+                    <div class="info_1">
+                        <h1>BMW Z4 ROADSTER</h1>
+                        <p>Couvert ou décapoté, le plaisir de conduire ne connaît plus aucunes limites au volant de la
+                            nouvelle
+                            BMW Z4. Un roadster, dans sa version la plus aboutie : découvrable, sportif et authentique.
+                            Avec sa
+                            dynamique puissante et son design progressiste, il n'a qu’un seul but : vous offrir une
+                            liberté
+                            complète entre la route et le ciel.</p><br>
+                        <h1>Porsche 718 Boxster</h1>
+                        <p>Les modèles 718 évoluent au coeur de la sportivité. Pour mieux conquérir les routes du monde,
+                            ces
+                            roadsters à moteur central, dans l’esprit de la légendaire Porsche 718, unissent un passé
+                            légendaire
+                            à l’avenir des modèles sportifs. Leur objectif : libérer le quotidien de sa banalité.</p>
+                    </div>
+                    <div class="gallerie_vid">
+                        <video src="../video/Toyota Corolla GR Sport.mp4" autoplay loop muted></video>
+                    </div>
+                </div>
 
-    <section id="cabriolet">
-        <div class="img_filtre"></div>
-        <div class="container_descriptif">
-            <div class="titre_categorie">
-                <h1>CABRIOLETS</h1>
-            </div>
-            <div class="back">
-                <a href="./categories.html"><i class="fa-solid fa-rotate-left"></i> Retour vers Catégories</a>
-            </div>
-            <div class="info_1">
-                <h1>BMW Z4 ROADSTER</h1>
-                <p>Couvert ou décapoté, le plaisir de conduire ne connaît plus aucunes limites au volant de la nouvelle
-                    BMW Z4. Un roadster, dans sa version la plus aboutie : découvrable, sportif et authentique. Avec sa
-                    dynamique puissante et son design progressiste, il n'a qu’un seul but : vous offrir une liberté
-                    complète entre la route et le ciel.</p><br>
-                <h1>Porsche 718 Boxster</h1>
-                <p>Les modèles 718 évoluent au coeur de la sportivité. Pour mieux conquérir les routes du monde, ces
-                    roadsters à moteur central, dans l’esprit de la légendaire Porsche 718, unissent un passé légendaire
-                    à l’avenir des modèles sportifs. Leur objectif : libérer le quotidien de sa banalité.</p>
-            </div>
-            <div class="gallerie_vid">
-                <video src="./video/Highlights of the new Porsche 718 Boxster.mp4" autoplay loop muted></video>
-            </div>
+                <div class="clr"></div>
 
-            <div class="nom">
-                <div class="voiture_1">
-                    <img src="./Images/Logo_marque_svg/bmw-8.svg">
-                    <h1>BMW Z4 ROADSTER</h1>
-                </div>
-                <div class="voiture_2">
-                    <img src="./Images/Logo_marque_svg/porsche-2.svg">
-                    <h1>Porsche 718 Boxster</h1>
-                </div>
-            </div>
+                <div class="citadine-content-2">
+                    <div class="nom">
+                        <div class="voiture_1">
+                            <img src="../Images/Logo_marque_svg/toyota-1.svg">
+                            <h1>TOYOTA Corolla GR SPORT</h1>
+                        </div>
+                        <div class="voiture_2">
+                            <img src="../Images/Logo_marque_svg/volkswagen-9.svg">
+                            <h1>GOLF GTI</h1>
+                        </div>
+                    </div>
 
-            <div class="barreimg">
-                <div class="link-img img1">
-                    <div class="opac">
-                        <a href="./5.Cabriolet/Cabriolet_voiture1.html">Encore plus de détails</a>
+                    <div class="barreimg">
+                        <a class="barreimg-ctn-1" href="#">
+                            <p>Plus de détails</p>
+                            <p>Extérieur</p>
+                        </a>
+                        <a class="barreimg-ctn-2" href="#">
+                            <p>Plus de détails</p>
+                            <p>Intérieur</p>
+                        </a>
+                        <a class="barreimg-ctn-3" href="#">
+                            <p>Plus de détails</p>
+                            <p>Extérieur</p>
+                        </a>
+                        <a class="barreimg-ctn-4" href="#">
+                            <p>Plus de détails</p>
+                            <p>Intérieur</p>
+                        </a>
                     </div>
-                    <img src="./Images/5.Cabriolet/5.BMW_Z4/5.BMW_Z4_exterieur1.jpg">
-                </div>
-                <div class="link-img img2">
-                    <div class="opac">
-                        <a href="./5.Cabriolet/Cabriolet_voiture1.html">Encore plus de détails</a>
-                    </div>
-                    <img src="./Images/5.Cabriolet/5.BMW_Z4/5.BMW_Z4_interieur1.jpg">
-                </div>
-                <div class="link-img img3">
-                    <div class="opac">
-                        <a href="./5.Cabriolet/Cabriolet_voiture2.html">Encore plus de détails</a>
-                    </div>
-                    <img src="./Images/5.Cabriolet/5.Porche_718-boxster/5.Porche_718-boxster_exterieur1.webp">
-                </div>
-                <div class="link-img img4">
-                    <div class="opac">
-                        <a href="./5.Cabriolet/Cabriolet_voiture2.html">Encore plus de détails</a>
-                    </div>
-                    <img src="./Images/5.Cabriolet/5.Porche_718-boxster/5.Porche_718-boxster_interieur1.webp">
                 </div>
             </div>
         </div>
     </section>
+    <!-- #endregion Citadine-->
 
     <footer id="main_footer">
         <p><span>S</span>C<span>A</span> &copy; 2022, All Right Reserved</p>
     </footer>
 
-    <script>
-        let toggle = document.querySelector('.toggle')
-        let body = document.querySelector('body')
-
-        toggle.addEventListener('click', function () {
-            body.classList.toggle('opening')
-        }) 
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='./script/script.js'></script>
 </body>
 
 </html>

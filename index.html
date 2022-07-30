@@ -1,83 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" media="screen and (max-width:768px)" href="./mobile.css">
-        <link rel="stylesheet" href="./index.css">
-        <title>SCA | Acceuil</title>
-    </head>
-    <body>
-        <header id="header_mobile">
-            <!-- navbar-mobile -->
-            <nav id="navbar-mobile">
-                <a href="./index.html" class="current">Acceuil</a>
-                <a href="./categories.html">Catégories</a>
-                <a href="./apropos.html">Entreprise</a>
-                <a href="./inscription.html">Résevation</a>
-            </nav>
-        </header>
-        <header id="header_desktop">
-            <div class="navbar">
-                    <img src="./Images/logo.jpg" height="100%">
-                    <h1 class="logo"><span>S</span>C<span>A</span>
-                    </h1>
-                    <div class="navbar_liens_desktop">
-                        <a href="./index.html" class="current">Accueil</a>
-                        <div class="dropdown1">
-                            <button class="dropbtn">
-                                <a href="./categories.html">Catégories</a>
-                            </button>
-                            <div class="dropdown1-content">
-                                <a href="./1.Citadine/Citadine_Descriptif1.html">Citadine</a> 
-                                <a href="./2.Familliale/Familliale_Descriptif1.html">Familliale</a> 
-                                <a href="./3.Sportive/Sportive_Descriptif1.html">Sportive</a> 
-                                <a href="./4.Luxe/Luxe_Descriptif1.html">Luxe</a> 
-                                <a href="./5.Cabriolet/Cabriolet_Descriptif1.html">Cabriolet</a> 
-                                <a href="./6.SUV/SUV_Descriptif1.html">SUV</a> 
-                                <a href="./7.Crossover/Crossover_Descriptif1.html">Crossover</a> 
-                                <a href="./8.Utilitaire/Utilitaire_Descriptif1.html">Utilitaire</a> 
-                            </div>
-                        </div> 
-                    <a href="./apropos.html">Entreprise</a>
-                    <a href="./inscription.html">Résevation</a>
-                    </div>
 
-                    <div class="toggle">
-                        <i class="fa-bars fa open"></i>
-                        <i class="fa fa-times close"></i>
-                    </div>  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css/index.css">
+    <title>SCA | Acceuil</title>
+</head>
+
+<body>
+    <!-- #region navbar-->
+    <header>
+        <div class="logo">
+            <img src="./Images/logo.jpg" height="100%">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="active">Acceuil</a></li>
+                <li><a href="./garage.html">Garage</a></li>
+                <li class="sub-menu ctg-menu"><a href="#">Catégories</a>
+                    <ul>
+                        <li><a href="./1.Citadine/Citadine_Descriptif1.html">Citadine</a></li>
+                        <li><a href="./2.Familliale/Familliale_Descriptif1.html">Familliale</a></li>
+                        <li><a href="./3.Sportive/Sportive_Descriptif1.html">Sportive</a></li>
+                        <li><a href="./4.Luxe/Luxe_Descriptif1.html">Luxe</a></li>
+                        <li><a href="./5.Cabriolet/Cabriolet_Descriptif1.html">Cabriolet</a></li>
+                        <li><a href="./6.SUV/SUV_Descriptif1.html">SUV</a></li>
+                        <li><a href="./7.Crossover/Crossover_Descriptif1.html">Crossover</a></li>
+                        <li><a href="./8.Utilitaire/Utilitaire_Descriptif1.html">Utilitaire</a></li>
+                    </ul>
+                </li>
+                <li><a href="./entreprise.html">Entreprise</a></li>
+                <li><a href="./reservation.html">Résevation</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
             </div>
-        </header>
+    </header>
+    <!-- #endregion navbar-->
 
-       
+    <section id="debut">
+        <div class="contenaire">
+            <video src="./video/Supercar Cut _ Woyshnis [4K].mp4" autoplay loop muted></video>
+            <div class="logoSCA">
+                <img src="./Images/logo.jpg" height="100%" width="100%">
+            </div>
+            <div class="text">
+                <h1>Location de voiture <br> de qualité avec <br> <span>S</span>C<span>A</span> enterprise</h1>
+            </div>
+        </div>
+    </section>
 
-        <section id="debut">  
-            <video src="./video/Supercar Cut _ Woyshnis [4K].mp4"  autoplay loop muted></video>
-           <div class="contenaire">   
-                <div class="logoSCA">
-                    <img src="./Images/logo.jpg" height="100%" width="100%">
-                </div>
-                <div class="text">
-                    <h1>Location de voiture <br> de qualité avec <br> <span>S</span>C<span>A</span> enterprise</h1>
-                </div>
-           </div>
-             
-        </section>
+    <footer id="main_footer">
+        <p><span>S</span>C<span>A</span> &copy; 2022, All Right Reserved</p>
+    </footer>
 
-        <footer id="main_footer">
-            <p><span>S</span>C<span>A</span> &copy; 2022, All Right Reserved</p>
-        </footer>
-        
-        <script>
-            let toggle = document.querySelector('.toggle')
-            let body = document.querySelector('body')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='./script/script.js'></script>
+</body>
 
-            toggle.addEventListener('click',function(){
-                body.classList.toggle('opening')
-            }) 
-        </script>
-    </body>
 </html>

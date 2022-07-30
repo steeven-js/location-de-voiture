@@ -1,0 +1,256 @@
+/* ENTREPRISE /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.contenaire {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+}
+
+.img_about {
+    width: 100%;
+    height: 400px;
+    background: url(../Images/Luxe.jpg) center center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_about h3 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.about_content {
+    width: 100%;
+    height: 550px;
+    /* border: 1px solid #c4151c; */
+}
+
+#entreprise .contenaire {
+    width: 100%;
+    /* border: 1px solid green; */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.about_content_left {
+    /* border: 1px solid purple; */
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 20px;
+}
+
+.about_content_left h1 {
+    text-align: left;
+    color: #c4151c;
+    margin-bottom: 20px;
+}
+
+.about_content_left p {
+    font-size: 30px;
+}
+
+.about_content_right {
+    /* border: 1px solid orange; */
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding: 20px;
+}
+
+.about_content_right p {
+    margin-bottom: 20px;
+}
+
+.about_content_right span {
+    font-weight: bold;
+}
+
+.about_service_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    /* border: 1px solid orangered; */
+
+}
+
+.shooting,
+.VIP,
+.Events,
+.Latest_models {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: 0px 20px 20px 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 2s;
+    /* border: 1px solid purple; */
+}
+
+.devant {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+.devant h3,
+.derriere {
+    color: aliceblue;
+
+
+}
+
+.shooting .derriere {
+    filter: drop-shadow(0 0 15px #0080ff);
+}
+
+.VIP .derriere {
+    filter: drop-shadow(0 0 15px #4b4b4b);
+}
+
+.Events .derriere {
+    filter: drop-shadow(0 0 10px #ff0000);
+}
+
+.Latest_models .derriere {
+    filter: drop-shadow(0 0 15px #d2c800);
+}
+
+.derriere {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    transform: rotateY(180deg);
+
+}
+
+.derriere:hover {
+    display: flex;
+
+
+}
+
+.derriere {
+    opacity: 0;
+}
+
+.derriere:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.shooting:hover .devant,
+.VIP:hover .devant,
+.Events:hover .devant,
+.Latest_models:hover .devant {
+    display: none;
+    transition: 2s;
+
+
+}
+
+.shooting:hover,
+.VIP:hover,
+.Events:hover,
+.Latest_models:hover {
+    transform: rotateY(180deg);
+    transition: 2s;
+    background-color: beige;
+}
+
+/* IMAGES */
+.shooting {
+    background: url(/Images/about-1-sca.jpg) center center/cover;
+}
+
+.VIP {
+    background: url(/Images/about-2-sca.jpg) center center/cover;
+}
+
+.Events {
+    background: url(/Images/about-3-sca.jpg) center center/cover;
+}
+
+.Latest_models {
+    background: url(/Images/about-4-sca.jpg) center center/cover;
+}
+
+@media (max-width: 810px) {
+
+    .toggle {
+        display: flex;
+    }
+
+    #header_desktop .navbar_liens_desktop {
+        display: none;
+    }
+
+    #navbar-mobile .current {
+        color: rgb(210, 0, 0);
+        background-color: #c4002e00;
+    }
+
+    #header_mobile a:hover {
+        color: #c4002e;
+    }
+
+    #header_mobile a {
+        font-size: 40px;
+    }
+
+    /* .contenaire de la page d'accuil */
+    #debut .contenaire {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .logoSCA {
+        width: auto;
+        height: 40%;
+    }
+
+    /* enctrprise */
+    .about_content {
+        height: 1300px;
+    }
+
+    .about_service_info {
+        flex-wrap: wrap;
+    }
+
+    .about_content .contenaire {
+        flex-direction: column;
+        top: 50px;
+
+    }
+
+    .about_content_left,
+    .about_content_right {
+        width: 80%;
+
+    }
+
+    .about_content_right {
+        font-size: 1.4em;
+    }
+}

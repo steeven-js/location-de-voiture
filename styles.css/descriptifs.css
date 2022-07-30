@@ -1,0 +1,680 @@
+/* DESCRIPTIFS1 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#citadines .filtre,
+#familliales .filtre,
+#sportives .filtre,
+#luxe .filtre,
+#cabriolets .filtre,
+#suv .filtre,
+#crossovers .filtre,
+#utilitaires .filtre {
+    position: absolute;
+    background-color: hsla(0, 0%, 83%, 0.2);
+    width: 100%;
+    height: calc(100% - 110px);
+}
+
+#citadines .container_descriptif,
+#familliales .container_descriptif,
+#sportives .container_descriptif,
+#luxe .container_descriptif,
+#cabriolets .container_descriptif,
+#suv .container_descriptif,
+#crossovers .container_descriptif,
+#utilitaires .container_descriptif {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titre_categorie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #c4151c;
+    font-size: 30px;
+    margin: 15px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.back a {
+    color: #c4151c;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    padding: 10px 25px;
+    width: 50%;
+    text-align: center;
+}
+
+/* .citadine-content-1,
+.citadine-content-2 {
+    margin-top: 50px;
+} */
+
+.info_1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 30px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.info_1 h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.info_1 p {
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.gallerie_vid {
+    width: 50%;
+    height: 100%;
+    float: right;
+    /* padding: 30px; */
+}
+
+.gallerie_vid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: rgba(211, 211, 211, 0.477);
+    /* margin-top: 50px; */
+}
+
+.voiture_1,
+.voiture_2 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    border: #c4151c 2px solid;
+}
+
+.nom h1 {
+    color: #fff;
+    padding: 0px 25px;
+}
+
+.nom img {
+    display: inline-block;
+    width: 40px;
+}
+
+.barreimg {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 300px;
+    background-color: rgba(211, 211, 211, 0.477);
+
+}
+
+.barreimg a {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+    border: #c4151c 2px solid;
+}
+
+.barreimg-ctn-1 p,
+.barreimg-ctn-2 p,
+.barreimg-ctn-3 p,
+.barreimg-ctn-4 p {
+    padding: 14px 16px;
+    background-color: rgba(211, 211, 211, 0.477);
+    width: 80%;
+    text-align: center;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-out, opacity 0.1s ease-out;
+}
+
+.barreimg-ctn-1:hover p,
+.barreimg-ctn-2:hover p,
+.barreimg-ctn-3:hover p,
+.barreimg-ctn-4:hover p {
+    background-color: rgba(196, 21, 27, 0.477);
+}
+
+/* DESCRIPTIFS1 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////// #region CITADINES /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#citadines {
+    padding-top: 50px;
+    height: 100%;
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+#citadines .barreimg-ctn-1 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine1_exterieur.jpg) center center/cover;
+}
+
+#citadines .barreimg-ctn-2 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine2_interieur.jpg) center center/cover;
+}
+
+#citadines .barreimg-ctn-3 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_exterieur1.webp) center center/cover;
+}
+
+#citadines .barreimg-ctn-4 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+/*////////// #endregion CITADINES /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////// #region FAMILLIALES /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#familliales {
+    padding-top: 50px;
+    height: 100%;
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+#familliales .barreimg-ctn-1 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine1_exterieur.jpg) center center/cover;
+}
+
+#familliales .barreimg-ctn-2 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine2_interieur.jpg) center center/cover;
+}
+
+#familliales .barreimg-ctn-3 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_exterieur1.webp) center center/cover;
+}
+
+#familliales .barreimg-ctn-4 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+/*////////// #endregion FAMILLIALES /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////// #region SPORTIVES /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#sportives {
+    padding-top: 50px;
+    height: 100%;
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+#sportives .barreimg-ctn-1 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine1_exterieur.jpg) center center/cover;
+}
+
+#sportives .barreimg-ctn-2 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine2_interieur.jpg) center center/cover;
+}
+
+#sportives .barreimg-ctn-3 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_exterieur1.webp) center center/cover;
+}
+
+#sportives .barreimg-ctn-4 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+/*////////// #endregion SPORTIVES /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////// #region LUXE /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#luxe {
+    padding-top: 50px;
+    height: 100%;
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+#luxe .barreimg-ctn-1 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine1_exterieur.jpg) center center/cover;
+}
+
+#luxe .barreimg-ctn-2 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine2_interieur.jpg) center center/cover;
+}
+
+#luxe .barreimg-ctn-3 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_exterieur1.webp) center center/cover;
+}
+
+#luxe .barreimg-ctn-4 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+/*////////// #endregion LUXE /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////// #region CABRIOLETS /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#cabriolets {
+    padding-top: 50px;
+    height: 100%;
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+#cabriolets .barreimg-ctn-1 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine1_exterieur.jpg) center center/cover;
+}
+
+#cabriolets .barreimg-ctn-2 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine2_interieur.jpg) center center/cover;
+}
+
+#cabriolets .barreimg-ctn-3 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_exterieur1.webp) center center/cover;
+}
+
+#cabriolets .barreimg-ctn-4 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+/*////////// #endregion CABRIOLETS /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////// #region SUV /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#suv {
+    padding-top: 50px;
+    height: 100%;
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+#suv .barreimg-ctn-1 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine1_exterieur.jpg) center center/cover;
+}
+
+#suv .barreimg-ctn-2 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine2_interieur.jpg) center center/cover;
+}
+
+#suv .barreimg-ctn-3 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_exterieur1.webp) center center/cover;
+}
+
+#citasuvdine .barreimg-ctn-4 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+/*////////// #endregion SUV /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////// #region CROSSOVERS /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#crossovers {
+    padding-top: 50px;
+    height: 100%;
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+#crossovers .barreimg-ctn-1 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine1_exterieur.jpg) center center/cover;
+}
+
+#crossovers .barreimg-ctn-2 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine2_interieur.jpg) center center/cover;
+}
+
+#crossovers .barreimg-ctn-3 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_exterieur1.webp) center center/cover;
+}
+
+#crossovers .barreimg-ctn-4 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+/*////////// #endregion CROSSOVERS /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////// #region UTILITAIRES /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#utilitaires {
+    padding-top: 50px;
+    height: 100%;
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+#utilitaires .barreimg-ctn-1 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine1_exterieur.jpg) center center/cover;
+}
+
+#utilitaires .barreimg-ctn-2 {
+    background: url(../Images/1.citadine/Citadine1_Corolla/citadine2_interieur.jpg) center center/cover;
+}
+
+#utilitaires .barreimg-ctn-3 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_exterieur1.webp) center center/cover;
+}
+
+#utilitaires .barreimg-ctn-4 {
+    background: url(../Images/1.citadine/Citadine2_GOLF_GTI/citadine2_intérieur1.jpg) center center/cover;
+}
+
+/*////////// #endregion UTILITAIRES /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*VOITURES-1 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#detail {
+    background: url(../Images/1.citadine/Citadine1_Corolla/Corolla_gallerie3.webp) center center/cover;
+    padding-top: 50px;
+    height: 100%;
+}
+
+#detail .filtre {
+    position: absolute;
+    background-color: hsla(0, 0%, 83%, 0.1);
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+#detail .container_descriptif {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: calc(100vh - 120px);
+}
+
+#detail .detail-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#detail .detail-content-1 {
+    display: flex;
+    height: 800px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#detail .detail-content-2 {
+    display: flex;
+    height: 800px;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+#detail .content-info-rigth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+/* #region gallerie*/
+
+.detail-gallerie {
+    position: relative;
+    width: 50%;
+}
+
+#detail .container-gallerie {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#detail .mySlides-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+/* Hide the images by default */
+#detail .mySlides {
+    display: none;
+    height: 500px;
+    width: 800px;
+}
+
+#detail .mySlides img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+#detail .cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+#detail .prev,
+#detail .next {
+    cursor: pointer;
+    position: absolute;
+    top: 170px;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #001f33;
+    background-color: #E1F2F7;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+
+    z-index: 2;
+}
+
+/* Position the "next button" to the right */
+#detail .next {
+    top: 50%;
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+#detail .prev {
+    top: 50%;
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#detail .prev:hover,
+#detail .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #001f33;
+    color: #E1F2F7;
+
+}
+
+/* Number text (1/3 etc) */
+#detail .numbertext {
+    color: #DEB992;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 15px;
+    position: absolute;
+    top: 0px;
+}
+
+/* Container for image text */
+#detail .caption-container {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    width: 100%;
+}
+
+/* Six columns side by side */
+#detail .column {
+    margin: 10px;
+}
+
+/* Add a transparency effect for thumnbail images */
+#detail .demo {
+    opacity: 0.6;
+}
+
+#detail .active,
+#detail .demo:hover {
+    opacity: 1;
+}
+
+#detail .row-1,
+#detail .row-2,
+#detail .row-3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#detail .row-1 img,
+#detail .row-2 img,
+#detail .row-3 img {
+    width: 80px;
+}
+
+/* #endregion gallerie*/
+
+#detail .performance h1 {
+    text-align: center;
+    color: #c4151c;
+}
+
+#detail .performance p {
+    margin: 20px 0px;
+    color: #E1F2F7;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#detail .tarif-icon .spec,
+#detail .tarif-icon .tarif {
+    margin: 20px 0px;
+    color: #E1F2F7;
+}
+
+#detail .tarif-icon .spec {
+    line-height: 3rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#detail .tarif-icon .tarif {
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    text-align: center;
+}
+
+#detail .dt-sp-1 {
+    color: #c4151c;
+}
+
+#detail .dt-sp-2 {
+    color: #c4151c;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VOITURES-2 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 991px) {
+    #citadine {
+        height: 1250px;
+    }
+
+    .container_descriptif .info_1 {
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+
+    .container_descriptif .gallerie_vid {
+        width: 100%;
+        float: none;
+    }
+
+    .barreimg {
+        height: 13vh;
+    }
+
+    .opac a {
+        display: block;
+        width: 100%;
+    }
+}

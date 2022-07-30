@@ -1,154 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" media="screen and (max-width:768px)" href="./mobile.css">
-        <link rel="stylesheet" href="./inscription.css">
-        <title>SCA | Inscription</title>
-    </head>
-    <body>
-        <header id="header_mobile">
-            <!-- navbar-mobile -->
-            <nav id="navbar-mobile">
-                <a href="./index.html">Acceuil</a>
-                <a href="./categories.html">Catégories</a>
-                <a href="./apropos.html">Entreprise</a>
-                <a href="./inscription.html" class="current">Résevation</a>
-            </nav>
-        </header>
 
-        <header id="header_desktop">
-            <div class="navbar">
-                    <img src="./Images/logo.jpg" height="100%">
-                    <h1 class="logo"><span>S</span>C<span>A</span>
-                    </h1>
-                    <div class="navbar_liens_desktop">
-                        <a href="./index.html">Accueil</a>
-                        <div class="dropdown1">
-                            <button class="dropbtn">
-                                <a href="./categories.html">Catégories</a>
-                            </button>
-                            <div class="dropdown1-content">
-                                <a href="./1.Citadine/Citadine_Descriptif1.html">Citadine</a> 
-                                <a href="./2.Familliale/Familliale_Descriptif1.html">Familliale</a> 
-                                <a href="./3.Sportive/Sportive_Descriptif1.html">Sportive</a> 
-                                <a href="./4.Luxe/Luxe_Descriptif1.html">Luxe</a> 
-                                <a href="./5.Cabriolet/Cabriolet_Descriptif1.html">Cabriolet</a> 
-                                <a href="./6.SUV/SUV_Descriptif1.html">SUV</a> 
-                                <a href="./7.Crossover/Crossover_Descriptif1.html">Crossover</a> 
-                                <a href="./8.Utilitaire/Utilitaire_Descriptif1.html">Utilitaire</a> 
-                            </div>
-                        </div> 
-                    <a href="./apropos.html">Entreprise</a>
-                    <a href="./inscription.html" class="current">Résevation</a>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css/inscription.css">
+    <link rel="stylesheet" href="./styles.css/index.css">
+    <title>SCA | Inscription</title>
+</head>
 
-                    <div class="toggle">
-                        <i class="fa-bars fa open"></i>
-                        <i class="fa fa-times close"></i>
-                    </div>  
-            </div>
-        </header>
-       
-        <section id="formulaire">
-            <div class="cont-form">
-                <article class="contact">
+<body>
+    <!-- #region navbar-->
+    <header>
+        <div class="logo">
+            <img src="./Images/logo.jpg" height="100%">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Acceuil</a></li>
+                <li><a href="./categories.html">Garage</a></li>
+                <li class="sub-menu ctg-menu"><a href="#">Catégories</a>
                     <ul>
-                        <li>Paris </li>
-                        <li>Berlin</li>
-                        <li>Londres</li>
-                        <li>Madrid</li>
+                        <li><a href="./1.Citadine/Citadine_Descriptif1.html">Citadine</a></li>
+                        <li><a href="./2.Familliale/Familliale_Descriptif1.html">Familliale</a></li>
+                        <li><a href="./3.Sportive/Sportive_Descriptif1.html">Sportive</a></li>
+                        <li><a href="./4.Luxe/Luxe_Descriptif1.html">Luxe</a></li>
+                        <li><a href="./5.Cabriolet/Cabriolet_Descriptif1.html">Cabriolet</a></li>
+                        <li><a href="./6.SUV/SUV_Descriptif1.html">SUV</a></li>
+                        <li><a href="./7.Crossover/Crossover_Descriptif1.html">Crossover</a></li>
+                        <li><a href="./8.Utilitaire/Utilitaire_Descriptif1.html">Utilitaire</a></li>
                     </ul>
-                    <div class="link-cont">
-                        <a href="tel:">Tel:123 456 789</a>
-                        <a href="mailto:">email@mail.com</a>
-                    </div>
-                </article>
-                <article class="reservation">
-                    <form action="php" class="group-form">
-                        <h3>Reserver votre voiture</h3>
-                        <label>Lieu de depart</label>
-                        <select  class="agence">
-                            <option value="Paris">Paris</option>
-                            <option value="Berlin">Berlin</option>
-                            <option value="Londres">Londres</option>
-                            <option value="Madrid">Madrid</option>
-                          
-                        </select>
-                        <label>Lieu de retour</label>
-                        <select  class="agence">
-                            <option value="Paris">Paris</option>
-                            <option value="Berlin">Berlin</option>
-                            <option value="Londres">Londres</option>
-                            <option value="Madrid">Madrid</option>
-                          
-                        </select>
-                        <div class="date-time">
-                            <div class="label">
-                                <label >Date de debut</label>
-                                <label>Date de fin</label>
-                            </div>
-                            <div class="date">
-                                
-                                <input type="date" name="date de debut"
-                                min="2022-01-01" max="2025-12-31">
-                                
-                                <input type="date" name="date de retour"
-                                min="2022-01-01" max="2025-12-31">
-                            </div>
-                            <div class="time">
-                               <input type="time" name="heur de depart "
-                               min="08:30" max="22:00">
-                               <input type="time" name="heur de arriver"
-                               min="08:30" max="22:00">
-                            </div>
-                            <div class="label">
-                                <label >AGE du conducteur</label>
-                                <label>Code Promo</label>
-                            </div>
-                            <div class="age-code">
-                                <select id="age" >
-                                    <option value="21-">21ans et moin</option>
-                                    <option value="22">22ans</option>
-                                    <option value="23">23ans</option>
-                                    <option value="24">24ans</option>
-                                    <option value="25">25ans</option>
-                                    <option value="26+">26ans et plus</option>
-                                    <option value="65+">65ans et plus</option>
-                                   
-                                </select>
-                                <input type="text" name="code promo" placeholder="Code promo">
-                            </div>
-                        </div>
-                        <input class="envoie" type="button" value="Submit" name="Enregistrer">
-
-                    </form>
-                    <div class="agence-img">
-                        <img src="./Images/parkvoiture.jpg" alt="">
-                    </div>
-
-                </article>
-                <article class="prossedur">
-                    <h1>Recuperation de la voiture</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus officiis quia modi, similique, voluptatem, maiores necessitatibus corporis asperiores veritatis aut doloribus magni perspiciatis aperiam quasi dolorem. Vel culpa voluptas, mollitia voluptatibus, iure quo modi dignissimos debitis veritatis sed repellat odit illo soluta facere repudiandae! Temporibus, amet? Fugiat omnis architecto quod, iure officia necessitatibus perspiciatis aliquid cumque dolor blanditiis fugit nobis harum a!</p>
-                </article>
+                </li>
+                <li><a href="./entreprise.html">Entreprise</a></li>
+                <li><a href="./inscription.html" class="active">Résevation</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
             </div>
-        </section>
+    </header>
+    <!-- #endregion navbar-->
 
-        <footer id="main_footer">
-            <p><span>S</span>C<span>A</span> &copy; 2022, All Right Reserved</p>
-        </footer>
-        
-        <script>
-            let toggle = document.querySelector('.toggle')
-            let body = document.querySelector('body')
+    <section id="formulaire">
+        <div class="cont-form">
+            <article class="contact">
+                <ul>
+                    <li>Paris </li>
+                    <li>Berlin</li>
+                    <li>Londres</li>
+                    <li>Madrid</li>
+                </ul>
+                <div class="link-cont">
+                    <a href="tel:">Tel:123 456 789</a>
+                    <a href="mailto:">email@mail.com</a>
+                </div>
+            </article>
+            <article class="reservation">
+                <form action="php" class="group-form">
+                    <h3>Reserver votre voiture</h3>
+                    <label>Lieu de depart</label>
+                    <select class="agence">
+                        <option value="Paris">Paris</option>
+                        <option value="Berlin">Berlin</option>
+                        <option value="Londres">Londres</option>
+                        <option value="Madrid">Madrid</option>
 
-            toggle.addEventListener('click',function(){
-                body.classList.toggle('opening')
-            }) 
-        </script>
-    </body>
+                    </select>
+                    <label>Lieu de retour</label>
+                    <select class="agence">
+                        <option value="Paris">Paris</option>
+                        <option value="Berlin">Berlin</option>
+                        <option value="Londres">Londres</option>
+                        <option value="Madrid">Madrid</option>
+
+                    </select>
+                    <div class="date-time">
+                        <div class="label">
+                            <label>Date de debut</label>
+                            <label>Date de fin</label>
+                        </div>
+                        <div class="date">
+
+                            <input type="date" name="date de debut" min="2022-01-01" max="2025-12-31">
+
+                            <input type="date" name="date de retour" min="2022-01-01" max="2025-12-31">
+                        </div>
+                        <div class="time">
+                            <input type="time" name="heur de depart " min="08:30" max="22:00">
+                            <input type="time" name="heur de arriver" min="08:30" max="22:00">
+                        </div>
+                        <div class="label">
+                            <label>AGE du conducteur</label>
+                            <label>Code Promo</label>
+                        </div>
+                        <div class="age-code">
+                            <select id="age">
+                                <option value="21-">21ans et moin</option>
+                                <option value="22">22ans</option>
+                                <option value="23">23ans</option>
+                                <option value="24">24ans</option>
+                                <option value="25">25ans</option>
+                                <option value="26+">26ans et plus</option>
+                                <option value="65+">65ans et plus</option>
+
+                            </select>
+                            <input type="text" name="code promo" placeholder="Code promo">
+                        </div>
+                    </div>
+                    <input class="envoie" type="button" value="Submit" name="Enregistrer">
+
+                </form>
+                <div class="agence-img">
+                    <img src="./Images/parkvoiture.jpg" alt="">
+                </div>
+
+            </article>
+            <article class="prossedur">
+                <h1>Recuperation de la voiture</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus officiis quia modi, similique,
+                    voluptatem, maiores necessitatibus corporis asperiores veritatis aut doloribus magni perspiciatis
+                    aperiam quasi dolorem. Vel culpa voluptas, mollitia voluptatibus, iure quo modi dignissimos debitis
+                    veritatis sed repellat odit illo soluta facere repudiandae! Temporibus, amet? Fugiat omnis
+                    architecto quod, iure officia necessitatibus perspiciatis aliquid cumque dolor blanditiis fugit
+                    nobis harum a!</p>
+            </article>
+        </div>
+    </section>
+
+    <footer id="main_footer">
+        <p><span>S</span>C<span>A</span> &copy; 2022, All Right Reserved</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='./script/script.js'></script>
+</body>
+
 </html>

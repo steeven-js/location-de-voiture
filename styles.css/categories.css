@@ -1,0 +1,201 @@
+/* SECTION CARD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#card {
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    /* border: 1px solid greenyellow; */
+}
+
+#mobile_categories {
+    display: none;
+}
+
+#categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 1200px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 100px auto;
+}
+
+#categories div {
+    margin: 0;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.citadine,
+.famillile,
+.sportive,
+.luxe {
+    height: 353px;
+}
+
+.citadine,
+.famillile,
+.sportive,
+.luxe,
+.cabriolet,
+.suv,
+.crossover,
+.utilitaire {
+    padding: 15px;
+}
+
+#categories h3 {
+    padding: 10px;
+}
+
+#categories .voiture {
+    width: 100%;
+    height: 53%;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 3px #c4002e;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#categories .categorie_nom {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #c4151c;
+    font-size: 25px;
+}
+
+#categories a {
+    text-decoration: none;
+    padding: 16px 20px;
+    text-align: center;
+    /* margin: 20px; */
+    background-color: #c4151c;
+    color: #fff;
+    border-radius: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+/* logo qui apparesse */
+.citadine,
+.famillile,
+.sportive,
+.luxe,
+.cabriolet,
+.suv,
+.crossover,
+.utilitaire {
+    position: relative;
+}
+
+#categories div.duo {
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+}
+
+.duo {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    width: 90%;
+    height: 50%;
+    top: 95px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.duo img {
+    width: 50%;
+    height: 100%;
+}
+
+.duo:hover {
+    opacity: 1;
+    transition: 2s;
+}
+
+/* VERSION_MOBILE ////////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 991px) {
+
+    /* MOBILE CATEGORIES/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    a {
+        text-decoration: none;
+    }
+
+    #card {
+        display: none;
+    }
+
+    #mobile_categories {
+        display: block;
+        border: peru 1px solid;
+    }
+
+    #mobile_categories h1 {
+        background: #c4002e;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+
+    #mobile_categories .contenaire_mobile_card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        height: 70%;
+        width: 90%;
+        margin: 20px auto;
+        align-items: center;
+        justify-items: center;
+        align-content: space-evenly;
+    }
+
+    .contenaire_mobile_card .ima-mob {
+        width: 180px;
+        height: 127px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenaire_mobile_card .text-mob {
+        margin: 4px;
+        width: 180px;
+        background: #d5d5d5;
+        height: 39px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: #333 solid 1px;
+        filter: drop-shadow(0px 4px 6px #333)
+    }
+
+    .contenaire_mobile_card .text-mob p {
+        width: 167px;
+        height: 26px;
+        font-size: 20px;
+        background: #fff;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .contenaire_mobile_card .ima-mob img {
+        width: 70%;
+        border-radius: 10px;
+        border: #333 solid 1px;
+        filter: drop-shadow(0px 4px 6px #333)
+    }
+
+    /* footer */
+    #main_footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

@@ -5,130 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./1.Citadine/Citadine_voiture1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles.css/descriptifs.css">
+    <link rel="stylesheet" href="../styles.css/index.css">
     <title>SCA | Toyota Corolla</title>
 </head>
 
 <body>
-    <header id="header_mobile">
-        <!-- navbar-mobile -->
-        <nav id="navbar-mobile">
-            <a href="./index.html">Acceuil</a>
-            <a href="./categories.html" class="current">Catégories</a>
-            <a href="./apropos.html">Entreprise</a>
-            <a href="./inscription.html">Avis</a>
-        </nav>
-    </header>
-
-    <header id="header_desktop">
-        <div class="navbar">
-            <img src="./Images/logo.jpg" alt="" height="100%">
-            <h1 class="logo"><span>S</span>C<span>A</span></h1>
-            <div class="navbar_liens_desktop">
-                <a href="./index.html">Accueil</a>
-                <div class="dropdown1">
-                    <button class="dropbtn">
-                        <a href="./categories.html" class="current">Catégories</a>
-                    </button>
-                    <div class="dropdown1-content">
-                        <a href="./1.Citadine/Citadine_Descriptif1.html">Citadine</a>
-                        <a href="./2.Familliale/Familliale_Descriptif1.html">Familliale</a>
-                        <a href="./3.Sportive/Sportive_Descriptif1.html">Sportive</a>
-                        <a href="./4.Luxe/Luxe_Descriptif1.html">Luxe</a>
-                        <a href="./5.Cabriolet/Cabriolet_Descriptif1.html">Cabriolet</a>
-                        <a href="./6.SUV/SUV_Descriptif1.html">SUV</a>
-                        <a href="./7.Crossover/Crossover_Descriptif1.html">Crossover</a>
-                        <a href="./8.Utilitaire/Utilitaire_Descriptif1.html">Utilitaire</a>
-                    </div>
-                </div>
-                <a href="./apropos.html">Entreprise</a>
-                <a href="./inscription.html">Résevation</a>
-            </div>
-
-            <div class="toggle">
-                <i class="fa-bars fa open"></i>
-                <i class="fa fa-times close"></i>
-            </div>
+    <!-- #region navbar-->
+    <header>
+        <div class="logo">
+            <img src="../Images/logo.jpg" height="100%">
         </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="../garage.html">Garage</a></li>
+                <li class="sub-menu ctg-menu"><a href="#" class="active">Catégories</a>
+                    <ul>
+                        <li><a href="../1.Citadine/Citadine_Descriptif1.html">Citadine</a></li>
+                        <li><a href="../2.Familliale/Familliale_Descriptif1.html">Familliale</a></li>
+                        <li><a href="../3.Sportive/Sportive_Descriptif1.html">Sportive</a></li>
+                        <li><a href="../4.Luxe/Luxe_Descriptif1.html">Luxe</a></li>
+                        <li><a href="../5.Cabriolet/Cabriolet_Descriptif1.html">Cabriolet</a></li>
+                        <li><a href="../6.SUV/SUV_Descriptif1.html">SUV</a></li>
+                        <li><a href="../7.Crossover/Crossover_Descriptif1.html">Crossover</a></li>
+                        <li><a href="../8.Utilitaire/Utilitaire_Descriptif1.html">Utilitaire</a></li>
+                    </ul>
+                </li>
+                <li><a href="../entreprise.html">Entreprise</a></li>
+                <li><a href="../reservation.html">Résevation</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+            </div>
     </header>
+    <!-- #endregion navbar-->
 
     <section id="detail">
-        <div class="img_filtre"></div>
-        <div class="content-info">
-            <article class="content-info-left">
-                <div class="back">
-                    <a href="./1.Citadine/Citadine_Descriptif1.html"><i class="fa-solid fa-rotate-left"></i>Retour vers
-                        citadine</a>
+        <div class="filtre">
+            <div class="container_descriptif">
+                <div class="titre_categorie">
+                    <h1>CITADINES</h1>
                 </div>
-                <div class="container_gallerie">
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 4</div>
-                        <img src="./Images/1.citadine/Citadine1_Corolla/Corolla_gallerie1.webp" style="width: 100%">
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 4</div>
-                        <img src="./Images/1.citadine/Citadine1_Corolla/Corolla_gallerie2.webp" style="width: 100%"
-                            style="height: 100%">
-                    </div>
+                <div class="back bg-drk">
+                    <a href="../1.Citadine/Citadine_Descriptif1.html"><i class="fa-solid fa-rotate-left"></i>
+                        CITADINES</a>
+                </div>
+                <!-- gallerie -->
+                <div class="detail-content-1">
+                    <div class="detail-gallerie">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
 
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="./Images/1.citadine/Citadine1_Corolla/Corolla_gallerie3.webp" style="width: 100%">
+                        <div class="mySlides-container">
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="../Images/1.citadine/Citadine1_Corolla/Corolla_gallerie1.webp">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="../Images/1.citadine/Citadine1_Corolla/Corolla_gallerie2.webp">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="../Images/1.citadine/Citadine1_Corolla/Corolla_gallerie3.webp">
+                            </div>
+
+                        </div>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="column">
+                                <img class="demo cursor"
+                                    src="../Images/1.citadine/Citadine1_Corolla/Corolla_gallerie1.webp"
+                                    onclick="currentSlide(1)" alt="desktop-design">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor"
+                                    src="../Images/1.citadine/Citadine1_Corolla/Corolla_gallerie2.webp"
+                                    onclick="currentSlide(2)" alt="desktop-preview">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor"
+                                    src="../Images/1.citadine/Citadine1_Corolla/Corolla_gallerie3.webp"
+                                    onclick="currentSlide(3)" alt="mobile-design">
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="./Images/1.citadine/Citadine1_Corolla/Corolla_gallerie4.webp" style="width: 100%">
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095</a>
-
-                    <div class="row">
-                        <div class="column">
-                            <img class="demo cursor" src="./Images/1.citadine/Citadine1_Corolla/Corolla_gallerie1.webp"
-                                style="width: 100%" onclick="currentSlide(1)">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="./Images/1.citadine/Citadine1_Corolla/Corolla_gallerie2.webp"
-                                style="width: 100%" onclick="currentSlide(2)">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="./Images/1.citadine/Citadine1_Corolla/Corolla_gallerie3.webp"
-                                style="width: 100%" onclick="currentSlide(3)">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="./Images/1.citadine/Citadine1_Corolla/Corolla_gallerie4.webp"
-                                style="width: 100%" onclick="currentSlide(4)">
-                        </div>
+                    <div class="detail-content-2">
+                        <article class="content-info-rigth">
+                            <div class="performance">
+                                <h1>UNE NOUVELLE ÈRE POUR <span>COROLLA</span></h1>
+                                <p>Berline compacte aux lignes racées et au regard affûté, la Corolla est prête à
+                                    attaquer
+                                    la route.
+                                    Ressentez le dynamisme et l'énergie de ses deux motorisations Hybrides 122 ch et
+                                    184
+                                    ch,
+                                    en
+                                    profitant de sensations de conduite inégalées. Son look distinctif allié à un
+                                    intérieur
+                                    design
+                                    et technologique font de la Corolla, la référence Hybride. Installez-vous pour
+                                    vivre
+                                    une
+                                    expérience unique.</p>
+                            </div>
+                            <div class="tarif-icon">
+                                <div class="spec">
+                                    <p>Motorisation : HYBRIDE 1.8L (122CH)</p>
+                                    <p>Consommations : 5l/100 km</p>
+                                    <p>Emissions de CO2 : 112 g/km</p>
+                                </div>
+                                <div class="tarif">
+                                    <h3><span class="dt-sp-1">A partir de</span></h3>
+                                    <br>
+                                    <p><span class="dt-sp-2">400€ / Jour</span></p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
-
-            </article>
-            <article class="content-info-rigth">
-                <div class="performance">
-                    <h1>UNE NOUVELLE ÈRE POUR <span>COROLLA</span></h1>
-                    <p>Berline compacte aux lignes racées et au regard affûté, la Corolla est prête à attaquer la route.
-                        Ressentez le dynamisme et l'énergie de ses deux motorisations Hybrides 122 ch et 184 ch, en
-                        profitant de sensations de conduite inégalées. Son look distinctif allié à un intérieur design
-                        et technologique font de la Corolla, la référence Hybride. Installez-vous pour vivre une
-                        expérience unique.</p>
-                </div>
-                <div class="tarif-icon">
-                    <div class="icon">
-                        <p>Motorisation : HYBRIDE 1.8L (122CH)</p>
-                        <p>Consommations : 5l/100 km</p>
-                        <p>Emissions de CO2 : 112 g/km</p>
-                    </div>
-                    <div class="tarif">
-                        <h3>A partir de </h3>
-                        <p><span> 400€</span>/Jour</p>
-                    </div>
-                </div>
-            </article>
+                <!-- GELLERIE FIN -->
+            </div>
+        </div>
         </div>
     </section>
 
@@ -136,45 +147,9 @@
         <p><span>S</span>C<span>A</span> &copy; 2022, All Right Reserved</p>
     </footer>
 
-    <script>
-        let toggle = document.querySelector('.toggle')
-        let body = document.querySelector('body')
-
-        toggle.addEventListener('click', function () {
-            body.classList.toggle('opening')
-        })
-
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("demo");
-            let captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='../script/script.js'></script>
+    <script src='../script/gallerie.js'></script>
 </body>
 
 </html>
