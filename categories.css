@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     position: relative;
     background-color: lightgrey;
     font-family: 'Raleway', sans-serif;
@@ -27,8 +27,8 @@ span {
     color: #c4151c;
 }
 
-video{
-    position:absolute;
+video {
+    position: absolute;
     z-index: -10;
     width: 100%;
     height: 94vh;
@@ -76,7 +76,8 @@ video{
 }
 
 #header_desktop .navbar a {
-    float: left; /* IMPORTANT*/
+    float: left;
+    /* IMPORTANT*/
     font-size: 16px;
     text-align: center;
     padding: 14px 16px;
@@ -86,12 +87,12 @@ video{
 }
 
 #header_desktop .dropdown1 {
-float: left;
-overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
 
-#header_desktop .dropdown1 .dropbtn { 
-    font-size: 16px;  
+#header_desktop .dropdown1 .dropbtn {
+    font-size: 16px;
     border: none;
     outline: none;
     color: hsl(0, 0%, 41%);
@@ -103,19 +104,22 @@ overflow: hidden;
 
 #header_desktop .dropdown1-content {
     display: none;
-    position: absolute; /* IMPORTANT*/
+    position: absolute;
+    /* IMPORTANT*/
     background-color: hsl(0, 0%, 98%);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     /* border-radius: 15px; */
 }
 
 #header_desktop .dropdown1-content a {
-    float: none; /* IMPORTANT*/
+    float: none;
+    /* IMPORTANT*/
     padding: 12px 16px;
     text-decoration: none;
-    display: block; /* IMPORTANT*/
+    display: block;
+    /* IMPORTANT*/
     text-align: center;
 }
 
@@ -124,12 +128,13 @@ overflow: hidden;
     /* border-radius: 15px; */
 }
 
-#header_desktop .dropdown1-content img{
+#header_desktop .dropdown1-content img {
     margin-right: 15px;
 }
 
 #header_desktop .dropdown1:hover .dropdown1-content {
-    display: block; /* IMPORTANT*/
+    display: block;
+    /* IMPORTANT*/
     z-index: 5;
 }
 
@@ -138,75 +143,81 @@ overflow: hidden;
     background-color: #c4151c;
 }
 
+#mobile_categories {
+    display: none;
+}
+
 /* NAVBAR MOBILE /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#navbar-mobile{
-    position:fixed;
+#navbar-mobile {
+    position: fixed;
     z-index: 3;
     background-color: #444444c2;
-    width:100% ;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    transform:translateY(-200%) ;
+    transform: translateY(-200%);
     transition: 2s;
 }
 
-#navbar-mobile li{
+#navbar-mobile li {
     display: flex;
     list-style: none;
     padding: 20px 0;
 }
 
-#navbar-mobile  a{
-    text-decoration:none;
-    color:#fff;
-   
+#navbar-mobile a {
+    text-decoration: none;
+    color: #fff;
+
 }
 
 #navbar-mobile h1 {
     font-size: 3em;
 }
 
-#navbar-mobile li a   {
-    font-size: 20px;  
+#navbar-mobile li a {
+    font-size: 20px;
 }
 
-.toggle{
+.toggle {
     position: relative;
     display: none;
     z-index: 5;
     font-size: 2em;
-    
+
 }
 
 .toggle .close {
     display: none;
 }
 
-.opening .open{
+.opening .open {
     display: none;
 }
 
-.opening .close{
+.opening .close {
     display: flex;
 }
 
 .opening #navbar-mobile {
-    transform:translateY(0) ;
+    transform: translateY(0);
     transition: 2s;
 }
 
-@media  (max-width: 810px){
-    
-    .toggle{
+@media (max-width: 810px) {
+
+    .toggle {
         display: flex;
     }
-    #header_desktop .navbar_liens_desktop{
+
+    #header_desktop .navbar_liens_desktop {
         display: none;
     }
+
     #navbar-mobile .current {
         color: rgb(210, 0, 0);
         background-color: #c4002e00;
@@ -219,14 +230,16 @@ overflow: hidden;
     #header_mobile a {
         font-size: 40px;
     }
+
     /* .contenaire de la page d'accuil */
-    #debut .contenaire{
+    #debut .contenaire {
         flex-direction: column;
         justify-content: space-around;
     }
-    .logoSCA{
+
+    .logoSCA {
         width: auto;
-        height:40%;
+        height: 40%;
     }
 }
 
@@ -252,7 +265,7 @@ overflow: hidden;
     width: 1200px;
     height: 100px;
     /* border: #c4002e 2px solid; */
-    
+
     /* background-color: #eee; */
     /* padding: 20px; */
     text-align: center;
@@ -267,13 +280,24 @@ overflow: hidden;
     border-radius: 15px;
 }
 
-.citadine, .famillile, .sportive, .luxe {
+.citadine,
+.famillile,
+.sportive,
+.luxe {
     height: 353px;
 }
 
-.citadine, .famillile, .sportive, .luxe, .cabriolet, .suv, .crossover, .utilitaire {
+.citadine,
+.famillile,
+.sportive,
+.luxe,
+.cabriolet,
+.suv,
+.crossover,
+.utilitaire {
     padding: 15px;
 }
+
 #categories h3 {
     padding: 10px;
 }
@@ -306,44 +330,58 @@ overflow: hidden;
     display: block;
     font-weight: bold;
 }
+
 /* logo qui apparesse */
-.citadine, .famillile, .sportive, .luxe, .cabriolet, .suv, .crossover, .utilitaire{
+.citadine,
+.famillile,
+.sportive,
+.luxe,
+.cabriolet,
+.suv,
+.crossover,
+.utilitaire {
     position: relative;
 }
-#categories div.duo{
- background-color: rgb(0, 0, 0,0);  
- border: none;  
+
+#categories div.duo {
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
 }
-.duo{
+
+.duo {
     display: flex;
-    position:absolute;
+    position: absolute;
     opacity: 0;
     width: 90%;
     height: 50%;
     top: 95px;
     border: none;
-    border-radius: 10px;  
-    background-color: rgb(0, 0, 0,0);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0);
 }
-.duo img{
+
+.duo img {
     width: 50%;
     height: 100%;
     /* background-color: rgba(0, 0, 0, 0);      */
 }
-.duo:hover{
+
+.duo:hover {
     opacity: 1;
     transition: 2s;
 }
 
 /* VERSION_MOBILE ////////////////////////////////////////////////////////////////////////////*/
 
-@media  (max-width: 810px) {
-    .toggle{
+@media (max-width: 810px) {
+    .toggle {
         display: flex;
     }
-    #header_desktop .navbar_liens_desktop{
+
+    #header_desktop .navbar_liens_desktop {
         display: none;
     }
+
     #navbar-mobile .current {
         color: rgb(210, 0, 0);
         background-color: #c4002e00;
@@ -356,15 +394,16 @@ overflow: hidden;
     #header_mobile a {
         font-size: 40px;
     }
-    
+
     /* .contenaire de la page d'accuil */
-    #debut .contenaire{
+    #debut .contenaire {
         flex-direction: column;
         justify-content: space-around;
     }
-    .logoSCA{
+
+    .logoSCA {
         width: auto;
-        height:40%;
+        height: 40%;
     }
 
     /* categorie */
